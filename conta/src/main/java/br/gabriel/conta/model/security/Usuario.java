@@ -1,4 +1,4 @@
-package br.cefetmg.petshop.model.security;
+package br.gabriel.conta.model.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

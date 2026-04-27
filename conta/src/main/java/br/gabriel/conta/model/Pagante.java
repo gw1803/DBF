@@ -1,7 +1,4 @@
 package br.gabriel.conta.model;
-
-import java.time.LocalDateTime;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,8 +13,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "usuario") 
-public class Usuario {
+@Entity(name = "pagante") 
+public class Pagante {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

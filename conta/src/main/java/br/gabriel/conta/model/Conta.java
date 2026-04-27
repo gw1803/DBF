@@ -32,7 +32,7 @@ public class Conta{
     private double valorTotal;
 
     @ManyToMany
-    @JoinTable(name = "conta_usuario", joinColumns = { @JoinColumn(name = "conta_id") }, inverseJoinColumns = {
-            @JoinColumn(name = "usuario_id") })
-    private List<Usuario> usuarios = new ArrayList<>();
+    @JoinTable(name = "conta_pagante", joinColumns = { @JoinColumn(name = "conta_id") }, inverseJoinColumns = {
+            @JoinColumn(name = "pagante_id") })
+    private List<Pagante> pagantes = new ArrayList<>();
 }

@@ -9,8 +9,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Embeddable
-public class ContaUsuarioId implements Serializable {
+public class ContaPaganteId implements Serializable {
     private Long idConta;
-    private Long idUsuario;
+    private Long idPagante;
 
 }

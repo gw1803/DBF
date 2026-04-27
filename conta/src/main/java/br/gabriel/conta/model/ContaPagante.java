@@ -12,19 +12,19 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name = "conta_usuario")
-public class ContaUsuario {
+@Entity(name = "conta_pagante")
+public class ContaPagante {
 
     @EmbeddedId
-    private ContaUsuarioId id = new ContaUsuarioId();
+    private ContaPaganteId id = new ContaPaganteId();
 
     @ManyToOne
     @MapsId("idConta")
     private Conta conta;
 
     @ManyToOne
-    @MapsId("idUsuario")
-    private Usuario usuario;
+    @MapsId("idPagante")
+    private Pagante pagante;
 
     @Column(nullable = true)
     private BigDecimal valor;
