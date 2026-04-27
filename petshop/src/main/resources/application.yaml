@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: petshop
@@ -10,9 +13,15 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create-drop   # create, create-drop, validate, none, update
+      ddl-auto: update   # create, create-drop, validate, none, update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
         #dialect: org.hibernate.dialect.MySQLDialect
+
+
+api:
+  security:
+    token:
+      secret: ${SECURITY_TOKEN_KEY:segredo}
